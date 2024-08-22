@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["boxdash.git"] = {
+    config = { "\27LJ\2\nÛ\2\0\0\5\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\b\0005\4\6\0>\4\1\0035\4\a\0>\4\2\0035\4\t\0>\4\4\3=\3\n\2B\0\2\1K\0\1\0\fentries\1\4\0\0\6q\16Quit Neovim\16quit_neovim\1\4\0\0\0\0003----------------------------------------------\1\4\0\0\6e\24Get an empty buffer\17empty_buffer\1\4\0\0\6i\26Switch to insert mode\16insert_mode\nalign\1\0\2\rvertical\3\0\15horizontal\3\0\1\0\4\ntitle\vNeovim\fentries\0\nalign\0\nstyle\3\1\nsetup\19neovim-boxdash\frequire\0" },
+    loaded = true,
+    path = "/home/reuben/.local/share/nvim/site/pack/packer/start/boxdash.git",
+    url = "https://git.0x7be.net/dirk/boxdash"
+  },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/home/reuben/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
@@ -99,6 +105,11 @@ _G.packer_plugins = {
     path = "/home/reuben/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/reuben/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/reuben/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -107,6 +118,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: boxdash.git
+time([[Config for boxdash.git]], true)
+try_loadstring("\27LJ\2\nÛ\2\0\0\5\0\v\0\0176\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\b\0005\4\6\0>\4\1\0035\4\a\0>\4\2\0035\4\t\0>\4\4\3=\3\n\2B\0\2\1K\0\1\0\fentries\1\4\0\0\6q\16Quit Neovim\16quit_neovim\1\4\0\0\0\0003----------------------------------------------\1\4\0\0\6e\24Get an empty buffer\17empty_buffer\1\4\0\0\6i\26Switch to insert mode\16insert_mode\nalign\1\0\2\rvertical\3\0\15horizontal\3\0\1\0\4\ntitle\vNeovim\fentries\0\nalign\0\nstyle\3\1\nsetup\19neovim-boxdash\frequire\0", "config", "boxdash.git")
+time([[Config for boxdash.git]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

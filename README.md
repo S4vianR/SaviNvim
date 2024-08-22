@@ -1,1 +1,3 @@
 # SaviNvim
+
+This is my personal configuration of neovim, is work in progress, so, don't expect much, yet...

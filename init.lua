@@ -9,3 +9,9 @@ vim.api.nvim_set_keymap("n", "<S-w>", ":tabclose<CR>", {noremap = true, silent =
 vim.api.nvim_set_keymap("n", "<C-e>", ":Neotree toggle<CR>", {noremap = true, silent = true})
 
 require('plugins')
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    vim.cmd("Neotree filesystem reveal left")
+  end,
+})
